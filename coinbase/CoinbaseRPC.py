@@ -15,7 +15,7 @@ import requests
 import time
 import urllib.parse
 
-from datetime import datetime, timedelta
+from datetime import datetime, timedeltaht
 
 # ----- Public Classes --------------------------------------------------------
 
@@ -24,7 +24,7 @@ class CoinbaseRPC(object):
     Abstracts functionality for executing remote procedure calls.
     '''
 
-    COINBASE_API = 'https://coinbase.com/api/v1'
+    COINBASE_API = 'https://api.coinbase.com/v2'
 
     def __init__(self, authentication, nonce=None):
         self.__authentication = authentication
